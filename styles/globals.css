@@ -1,26 +1,42 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@font-face {
+  font-family: "JosefinSans";
+  src: url('/JosefinSans.ttf');
+}
+
+@font-face{
+  font-family:"Didot";
+  src: url('/Didot\ Bold\ Italic.ttf');
+  src:url('/Didot\ LT\ Std\ Bold.otf');
+  src:url('/Didot\ LT\ Std\ Italic.otf');
+  src:url('/Didot\ Medium.ttf');
+  src:url('/Didot-Regular.ttf')
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: JosefinSans;
+  color:#f3f3f3;
+  background-color:#2d2d2d;
 }
-
+h1,h2,h3,h4,h5,h6{
+  font-family: Didot;
+}
 a {
   color: inherit;
   text-decoration: none;
+  font-family: JosefinSans;
 }
 
 * {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.slider.animated{
+  gap:1rem;
 }
