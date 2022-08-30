@@ -4,7 +4,7 @@ const Footer = () => {
     return ( 
         <footer className="px-40 py-11 bg-[#111111] flex justify-between">
             <div>
-                <Image width={265} height={34} src={'/logo.png'}/>
+                <Image width={265} alt="logo" height={34} src={'/logo.png'}/>
                 <p className="text-xs text-[#b2b2b2] font-semibold text-right">WORK HARD, PLAY HARD, REST HARD</p>
             </div>
             <div>

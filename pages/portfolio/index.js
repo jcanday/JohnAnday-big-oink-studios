@@ -32,7 +32,7 @@ const Portfolio = (props) => {
                         return (
                             <div className='grid grid-cols-2' key={portfolio.slug}>
                                 <Link href={`/portfolio/${portfolio.slug}`}>
-                                    <Image src={portfolio.featuredImage.url} objectFit={'cover'} width={560} height={360}/>
+                                    <Image src={portfolio.featuredImage.url} alt="featured image" objectFit={'cover'} width={560} height={360}/>
                                 </Link>
                                 <div className='flex flex-col gap-3 pl-12 justify-center pr-60'>
                                     <Link href={`/portfolio/${portfolio.slug}`}>
@@ -63,7 +63,7 @@ const Portfolio = (props) => {
                                     </ul>
                                 </div>
                                 <Link href={`/portfolio/${portfolio.slug}`}>
-                                    <Image src={portfolio.featuredImage.url} objectFit={'cover'} width={560} height={360}/>
+                                    <Image src={portfolio.featuredImage.url} alt="featured image" objectFit={'cover'} width={560} height={360}/>
                                 </Link>
                                 
                             </div>

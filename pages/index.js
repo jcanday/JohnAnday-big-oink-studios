@@ -40,7 +40,7 @@ export default function Home(props) {
     
     <div>
       <div className=" bg-cover bg-[#000000]/30 bg-[url('/cover-video.png')] bg-blend-multiply relative h-[550px] w-full flex justify-center items-center">
-        <Image src={'/nom-logo.png'} width={437} height={149}/>
+        <Image src={"/nom-logo.png"} width={437} height={149} alt="logo"/>
       </div>
       <div className="px-40">
         <div className='grid-cols-2 grid justify-items-stretch py-20 h-full'>
@@ -51,8 +51,8 @@ export default function Home(props) {
           </div>
           <div className='flex justify-end'>
             <div className='bg-[#474747] w-[265px] flex flex-col justify-center items-center gap-1 py-11 px-9'>
-              <p className='text-xl'>SEE WHAT WE'VE BEEN UP TO:</p>
-              <Link href={`/portfolio/${portfolio.slug}`}><a><Image src={portfolio.featuredImage.url} width={191} height={122}/></a></Link>
+              <p className="text-xl">SEE WHAT WE&apos;VE BEEN UP TO:</p>
+              <Link href={`/portfolio/${portfolio.slug}`}><a><Image src={portfolio.featuredImage.url} alt="featured" width={191} height={122}/></a></Link>
               <p className='text-base'>{portfolio.title}</p>
             </div>
           </div>
@@ -65,13 +65,13 @@ export default function Home(props) {
                 <h2 className='text-2xl font-bold pb-2.5'>{review.reviewText}</h2>
                 <p className='font-light'>-{review.reviewer}</p> 
               </div>
-              <Image src={review.featuredImage.url} objectFit={'cover'} width={300} height={500}></Image>              
+              <Image src={review.featuredImage.url} objectFit={'cover'} width={300} alt="review-featured" height={500}></Image>              
             </div>
           ))}
         </Carousel>
       </div>
       <div className="px-40 pt-16 pb-11 bg-[#474747]" id='contact'>
-        <h2 className='font-bold text-3xl'>We'd love to hear from you!</h2>
+        <h2 className="font-bold text-3xl">We&apos;d love to hear from you!</h2>
         <form action="#" className='pl-24 pr-96'>
           <div className="form-group pt-8 grid grid-cols-2 gap-10">
             <div className="flex flex-col gap-1">
@@ -85,7 +85,7 @@ export default function Home(props) {
           </div>
           <div className="form-group py-8 flex flex-col gap-1">
             <label htmlFor="Message">Message</label>
-            <textarea className='bg-transparent border-2 border-[#74BFC4]' name="Message" id="" cols="30" rows="10"></textarea>
+            <textarea className='bg-transparent border-2 border-[#74BFC4]' name="Message" cols="30" rows="10"></textarea>
           </div>
           <button className="bg-[#368A99] text-base px-5 py-2" type='submit' > Send Message</button>
         </form>
